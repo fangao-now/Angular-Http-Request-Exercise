@@ -38,4 +38,13 @@ export class ServerService {
       }
     );
   }
+
+  getAppName() {
+    return this.http.get('https://angular-http-exercise-95836.firebaseio.com/appName.json')
+    .map(
+      (response: Response) => {
+        return response.json();
+      }
+    );
+  }
 }

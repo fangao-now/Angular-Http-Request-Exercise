@@ -1,5 +1,8 @@
 <div class="container">
   <div class="row">
+      <h2>{{ appName | async}}</h2>
+  </div>
+  <div class="row">
       <button class="btn btn-primary" (click)="onSaveServer()">Save Server</button>
       <button class="btn btn-primary" (click)="onGetServer()">Get Server</button>
 
